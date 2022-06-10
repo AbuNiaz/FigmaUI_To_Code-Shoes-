@@ -62,6 +62,7 @@ class MyHomePage extends StatelessWidget {
                 height: 20,
               ),
               Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Column(
                     children: const [
@@ -117,6 +118,9 @@ class MyHomePage extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(items: const [
+        BottomNavigationBarItem(icon: Icon(Icons.trending_up))
+      ]),
     );
   }
 }
