@@ -1,3 +1,4 @@
+import 'package:figmaui_to_code/Shoes%20Contain/first_page.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -56,6 +57,61 @@ class MyHomePage extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Row(
+                children: [
+                  Column(
+                    children: const [
+                      ShoesContent(
+                        height: 250,
+                        width: 150,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      ShoesContent(
+                        height: 250,
+                        width: 150,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      ShoesContent(
+                        height: 250,
+                        width: 150,
+                      )
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 10,
+                    width: 10,
+                  ),
+                  Column(
+                    children: const [
+                      ShoesContent(
+                        height: 220,
+                        width: 150,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      ShoesContent(
+                        height: 220,
+                        width: 150,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      ShoesContent(
+                        height: 220,
+                        width: 150,
+                      )
+                    ],
+                  )
+                ],
               )
             ],
           ),
