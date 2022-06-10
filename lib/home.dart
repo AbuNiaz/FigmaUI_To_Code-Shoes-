@@ -27,23 +27,33 @@ class MyHomePage extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         color: Colors.white,
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(15.0),
           child: ListView(
             children: [
+              const SizedBox(
+                height: 10,
+              ),
               const Text(
                 'Nike shoes store',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               ),
+              const SizedBox(
+                height: 20,
+              ),
               Container(
-                height: 50,
+                height: 45,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                    color: Colors.white30,
-                    borderRadius: BorderRadius.circular(25)),
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(15)),
                 child: TextFormField(
-                  decoration: const InputDecoration(
-                    suffixIcon: Icon(Icons.search),
+                  decoration: InputDecoration(
+                    prefixIcon: const Icon(Icons.search),
                     hintText: 'Search',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: BorderSide.none,
+                    ),
                   ),
                 ),
               )
