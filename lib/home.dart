@@ -118,9 +118,6 @@ class MyHomePage extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.trending_up))
-      ]),
     );
   }
 }
