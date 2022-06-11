@@ -18,7 +18,7 @@ class ShoesContent extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.blueGrey,
                   borderRadius: BorderRadius.circular(20),
-                )),
+                ),),
           ],
         ),
       ],
