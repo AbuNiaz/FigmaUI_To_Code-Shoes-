@@ -1,9 +1,15 @@
 import 'package:figmaui_to_code/Shoes%20Contain/first_page.dart';
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatelessWidget {
+class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int currentPage = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -116,6 +122,31 @@ class MyHomePage extends StatelessWidget {
               )
             ],
           ),
+        ),
+      ),
+      extendBody: true,
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.home),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        shape: const CircularNotchedRectangle(),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.trending_up,
+                  color: Colors.lightBlue,
+                )),
+            IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.settings,
+                )),
+          ],
         ),
       ),
     );
