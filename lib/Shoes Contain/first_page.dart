@@ -1,3 +1,4 @@
+import 'package:figmaui_to_code/Shoes_details/details_home.dart';
 import 'package:flutter/material.dart';
 
 class ShoesContent extends StatelessWidget {
@@ -59,7 +60,14 @@ class ShoesContent extends StatelessWidget {
                             top: 0.0,
                             right: 285.0,
                             child: GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const HomeDetails()),
+                                );
+                              },
                               child: const Image(
                                 image: AssetImage('images/shoe2.jpg'),
                               ),
