@@ -67,58 +67,61 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(
                 height: 20,
               ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Column(
-                    children: const [
-                      ShoesContent(
-                        height: 250,
-                        width: 150,
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      ShoesContent(
-                        height: 250,
-                        width: 150,
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      ShoesContent(
-                        height: 250,
-                        width: 150,
-                      )
-                    ],
-                  ),
-                  const SizedBox(
-                    height: 10,
-                    width: 10,
-                  ),
-                  Column(
-                    children: const [
-                      ShoesContent(
-                        height: 220,
-                        width: 150,
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      ShoesContent(
-                        height: 220,
-                        width: 150,
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      ShoesContent(
-                        height: 220,
-                        width: 150,
-                      )
-                    ],
-                  )
-                ],
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Column(
+                      children: const [
+                        ShoesContent(
+                          height: 250,
+                          width: 150,
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        ShoesContent(
+                          height: 250,
+                          width: 150,
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        ShoesContent(
+                          height: 250,
+                          width: 150,
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                      width: 10,
+                    ),
+                    Column(
+                      children: const [
+                        ShoesContent(
+                          height: 220,
+                          width: 150,
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        ShoesContent(
+                          height: 220,
+                          width: 150,
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        ShoesContent(
+                          height: 220,
+                          width: 150,
+                        )
+                      ],
+                    )
+                  ],
+                ),
               )
             ],
           ),
