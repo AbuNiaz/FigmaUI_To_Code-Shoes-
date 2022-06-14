@@ -30,25 +30,28 @@ class ShoesContent extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Column(children: const [
-                            Text(
-                              "White",
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            SizedBox(
-                              height: 5,
-                            ),
-                            Text(
-                              "A Pair",
-                              style: TextStyle(color: Colors.black38),
-                            )
-                          ]),
+                          Column(
+                            children: const [
+                              Text(
+                                "White",
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Text(
+                                "A Pair",
+                                style: TextStyle(color: Colors.black38),
+                              )
+                            ],
+                          ),
                           Container(
-                              height: 35,
-                              width: 35,
-                              decoration: const BoxDecoration(
-                                  color: Colors.white, shape: BoxShape.circle),
-                              child: const Icon(Icons.check_circle_outline))
+                            height: 35,
+                            width: 35,
+                            decoration: const BoxDecoration(
+                                color: Colors.white, shape: BoxShape.circle),
+                            child: const Icon(Icons.check_circle_outline),
+                          )
                         ],
                       ),
                     ),
@@ -57,21 +60,22 @@ class ShoesContent extends StatelessWidget {
                         color: null,
                         height: 85,
                         child: Positioned(
-                            top: 0.0,
-                            right: 285.0,
-                            child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) =>
-                                          const HomeDetails()),
-                                );
-                              },
-                              child: const Image(
-                                image: AssetImage('images/shoe2.jpg'),
-                              ),
-                            )),
+                          top: 0.0,
+                          right: 285.0,
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const HomeDetails(),
+                                ),
+                              );
+                            },
+                            child: const Image(
+                              image: AssetImage('images/shoe2.jpg'),
+                            ),
+                          ),
+                        ),
                       ),
                       elevation: 10,
                     ),
