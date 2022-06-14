@@ -51,8 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 45,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(15)),
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(15),
+                ),
                 child: TextFormField(
                   decoration: InputDecoration(
                     prefixIcon: const Icon(Icons.search),
@@ -117,12 +118,12 @@ class _MyHomePageState extends State<MyHomePage> {
                         ShoesContent(
                           height: 220,
                           width: 150,
-                        )
+                        ),
                       ],
-                    )
+                    ),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),
@@ -139,16 +140,18 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.trending_up,
-                  color: Colors.lightBlue,
-                )),
+              onPressed: () {},
+              icon: const Icon(
+                Icons.trending_up,
+                color: Colors.lightBlue,
+              ),
+            ),
             IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.settings,
-                )),
+              onPressed: () {},
+              icon: const Icon(
+                Icons.settings,
+              ),
+            ),
           ],
         ),
       ),
