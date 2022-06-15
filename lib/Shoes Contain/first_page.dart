@@ -85,7 +85,7 @@ class ShoesContent extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 16,
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
