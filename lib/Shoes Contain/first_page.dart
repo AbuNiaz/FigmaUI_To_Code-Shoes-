@@ -51,7 +51,7 @@ class ShoesContent extends StatelessWidget {
                             decoration: const BoxDecoration(
                                 color: Colors.white, shape: BoxShape.circle),
                             child: const Icon(Icons.check_circle_outline),
-                          )
+                          ),
                         ],
                       ),
                     ),
